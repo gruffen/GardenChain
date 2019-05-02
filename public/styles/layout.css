@@ -1,0 +1,148 @@
+/*
+ * layout.css
+ */
+
+@font-face {
+    font-family: DejaVu;
+    src: url('fonts/DejaVuSans.eot');
+    src: local('☺'),
+         url("fonts/DejaVuSans.eot?#iefix") format("embedded-opentype"),
+         url("fonts/DejaVuSans.woff") format("woff"),
+         url("fonts/DejaVuSans.svg") format("svg"),
+         url("fonts/DejaVuSans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: URWGothicDemi;
+    src: url('fonts/URWGothicL-Demi.eot');
+    src: local('☺'),
+         url("fonts/URWGothicL-Demi.eot?#iefix") format("embedded-opentype"),
+         url("fonts/URWGothicL-Demi.woff") format("woff"),
+         url("fonts/URWGothicL-Demi.svg") format("svg"),
+         url("fonts/URWGothicL-Demi.ttf") format("truetype");
+    font-weight: 600; /* demi-bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: URWGothicBook;
+    src: url('fonts/URWGothicL-Book.eot');
+    src: local('☺'),
+         url("fonts/URWGothicL-Book.eot?#iefix") format("embedded-opentype"),
+         url("fonts/URWGothicL-Book.woff") format("woff"),
+         url("fonts/URWGothicL-Book.svg") format("svg"),
+         url("fonts/URWGothicL-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    min-height: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: DejaVu, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80%;
+    color: rgb(48,48,48);
+    margin: 10px;
+    height: 100%;
+}
+
+p {
+    margin-bottom: 1ex;
+}
+
+a {
+    border-bottom: 1px dotted rgb(120, 120, 120);
+    color: inherit;
+    height: inherit;
+    line-height: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px dotted rgb(255, 204, 0);
+    color: rgb(255, 204, 0);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    font-family: URWGothicDemi, sans-serif;
+    font-weight: 600; /* demi-bold */
+    font-style: normal;
+    color: rgb(64, 64, 64);
+    border: none;
+}
+
+h2, h3, h4, h5, h6 {
+    border-top: 1px solid rgb(120, 120, 120);
+    padding-top: 10px;
+    margin: 2ex 0px 1ex 0px;
+}
+
+h1 {
+    margin: 0px 0px 1ex 0px;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+li {
+    padding-left: 3em;
+    text-indent: -1em;
+    margin-bottom: 1ex;
+}
+
+ul>li:before {
+    content: "\2022";
+    padding-right: 0.5em;
+    color: rgb(120, 120, 120);
+}
+
+table {
+    border-collapse:collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    font-family: DejaVu, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80%;
+    text-align: left;
+    color: rgb(48, 48, 48);
+    margin: 0px;
+    padding: 3px 7px 2px 7px;
+    height: 100%;
+    border: 1px solid rgb(120, 120, 120);
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    background-color: rgb(180, 180, 180);
+}
+
+tr.alt td
+{
+    background-color: rgb(230, 230, 230);
+}
+
+code {
+    font-size: 120%;
+}
