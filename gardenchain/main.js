@@ -9,7 +9,7 @@ var p2p_port = process.env.P2P_PORT || 6001;
 var initialPeers = process.env.PEERS ? process.env.PEERS.split(',') : [];
 
 class Block {
-    constructor(index, previousHash, timestamp, garden, produce, quantity, weight, hash) {
+    constructor(index, previousHash, timestamp, garden, produce, quantity, weight, transType, hash) {
         this.index = index;
         this.previousHash = previousHash.toString();
         this.timestamp = timestamp;
@@ -17,6 +17,7 @@ class Block {
         this.produce = produce;
         this.quantity = quantity;
         this.weight = weight;
+        this.transType = transType;
         this.hash = hash.toString();
     }
 }
@@ -29,7 +30,7 @@ var MessageType = {
 };
 
 var getGenesisBlock = () => {
-    return new Block(0, "0", 1465154705, "Initial", "Nothing", 0, 0, "816534932c2b7154836da6afc367695e6337db8a921823784c14378abed4f7d7");
+    return new Block(0, "0", 1465154705, "Initial", "Nothing", 0, 0, "IN", "816534932c2b7154836da6afc367695e6337db8a921823784c14378abed4f7d7");
 };
 
 var blockchain = [getGenesisBlock()];
@@ -106,16 +107,18 @@ var initErrorHandler = (ws) => {
 var generateNextBlock = (blockData) => {
     var previousBlock = getLatestBlock();
 
-    var garden = blockdata.garden;
+    var garden = blockData.garden;
     var produce = blockData.produce;
     var quantity = blockData.quantity;
     var weight = blockData.weight;
+    var transType = blockData.transType;
 
     var nextIndex = previousBlock.index + 1;
     var nextTimestamp = new Date().getTime() / 1000;
     var nextHash = calculateHash(nextIndex, previousBlock.hash, produce);
 
-    return new Block(nextIndex, previousBlock.hash, nextTimestamp, garden, produce, quantity, weight, nextHash);
+    return new Block(nextIndex, previousBlock.hash, nextTimestamp, garden,
+        produce, quantity, weight, transType, nextHash);
 };
 
 

@@ -7,6 +7,51 @@
         "produce": "Nothing",
         "quantity": 0,
         "weight": 0,
+        "transType": "IN",
         "hash": "816534932c2b7154836da6afc367695e6337db8a921823784c14378abed4f7d7"
+    },
+    {
+        "index": 1,
+        "previousHash": "816534932c2b7154836da6afc367695e6337db8a921823784c14378abed4f7d7",
+        "timestamp": 1557265707.871,
+        "garden": "Garden 1",
+        "produce": "Carrot",
+        "quantity": 5,
+        "weight": 7.6,
+        "transType": "IN",
+        "hash": "f7f917765a42483b9bb04f86bbed6856119473a83c3ab6a49d6454398655fb10"
+    },
+    {
+        "index": 2,
+        "previousHash": "f7f917765a42483b9bb04f86bbed6856119473a83c3ab6a49d6454398655fb10",
+        "timestamp": 1557265818.283,
+        "garden": "Garden 1",
+        "produce": "Tomato",
+        "quantity": 5,
+        "weight": 8,
+        "transType": "IN",
+        "hash": "cd2f00fd8fc265eae9b45e9241007362fcef06edb391302b673a3baff9947eee"
+    },
+    {
+        "index": 3,
+        "previousHash": "cd2f00fd8fc265eae9b45e9241007362fcef06edb391302b673a3baff9947eee",
+        "timestamp": 1557265863.413,
+        "garden": "Garden 1",
+        "produce": "Tomato",
+        "quantity": 3,
+        "weight": 2,
+        "transType": "IN",
+        "hash": "f3bd1710aaf77ab1442637faa30fb2244f76085e20105f8ca4de94046577b588"
+    },
+    {
+        "index": 4,
+        "previousHash": "f3bd1710aaf77ab1442637faa30fb2244f76085e20105f8ca4de94046577b588",
+        "timestamp": 1557266149.398,
+        "garden": "Garden 2",
+        "produce": "Potato",
+        "quantity": 3,
+        "weight": 2,
+        "transType": "IN",
+        "hash": "0a20aaf30a6149ed6f7db78fa2559905cf8b2a866d9ea827c23575ccf13b51e1"
     }
 ]

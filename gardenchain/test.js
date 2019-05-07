@@ -11,10 +11,11 @@ var options = {
 }
 
 var data = {
-  "garden": "Garden 1",
-  "produce": "Carrot",
-  "quantity": 5,
-  "weight": 7.6
+  "garden": "Garden 2",
+  "produce": "Potato",
+  "quantity": 3,
+  "weight": 2.0,
+  "transType": "IN"
 }
 
 var jsonStr = JSON.stringify(data);

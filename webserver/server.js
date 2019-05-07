@@ -14,7 +14,7 @@ var initHttpServer = () => {
   app.use(express.static(path.join(__dirname, '../public'), {
     index: false
   }));
-
+  
   // HOME PAGE
   app.get('/', (req, res) => {
     console.log("Retrieving index.html");
