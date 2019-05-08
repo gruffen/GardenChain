@@ -11,10 +11,10 @@ var options = {
 }
 
 var data = {
-  "garden": "Garden 2",
-  "produce": "Potato",
-  "quantity": 3,
-  "weight": 2.0,
+  "garden": "Garden 1",
+  "produce": "Carrot",
+  "quantity": 7,
+  "weight": 11.0,
   "transType": "IN"
 }
 
