@@ -1,7 +1,7 @@
 var http = require("http")
 
 var options = {
-  host:"localhost",
+  host:"192.168.50.239",
   port: 3001,
   path:"/mineBlock",
   method: "POST",
@@ -11,10 +11,10 @@ var options = {
 }
 
 var data = {
-  "garden": "Garden 1",
-  "produce": "Carrot",
-  "quantity": 7,
-  "weight": 11.0,
+  "garden": "Garden 2",
+  "produce": "Apple",
+  "quantity": 4,
+  "weight": 1.7,
   "transType": "IN"
 }
 

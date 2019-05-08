@@ -40,6 +40,7 @@
 
 html {
     min-height: 100%;
+    width: 100%;
     height: 100%;
     background: #ffffff;
     padding: 0;
@@ -58,8 +59,15 @@ body {
 
 .container {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     margin: auto;
+}
+
+.anotherContainer {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+
 }
 
 p {
@@ -72,6 +80,7 @@ a {
     height: inherit;
     line-height: inherit;
     text-decoration: none;
+    font-size: 20px
 }
 
 a:hover {
@@ -84,7 +93,7 @@ h1, h2, h3, h4, h5, h6,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
     font-family: URWGothicDemi, sans-serif;
-    font-weight: 600; /* demi-bold */
+    font-weight: 100; /* demi-bold */
     font-style: normal;
     color: rgb(64, 64, 64);
     border: none;
@@ -92,13 +101,16 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
 }
 
 h2, h3, h4, h5, h6 {
-    border-top: 1px solid rgb(120, 120, 120);
     padding-top: 10px;
     margin: 2ex 0px 1ex 0px;
 }
 
 h1 {
     margin: 0px 0px 1ex 0px;
+}
+
+h3 {
+  font-weight: 500;
 }
 
 ul {
@@ -120,30 +132,36 @@ ul>li:before {
 }
 
 table {
-    border-collapse:collapse;
-    margin-bottom: 10px;
+    color: #333; /* Lighten up font color */
+    font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+    width: 640px;
+    border-collapse:
+    collapse; border-spacing: 0;
+    margin: 0 auto;
 }
 
-th, td {
-    font-family: DejaVu, sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 80%;
-    text-align: left;
-    color: rgb(48, 48, 48);
-    margin: 0px;
-    padding: 3px 7px 2px 7px;
-    height: 100%;
-    border: 1px solid rgb(120, 120, 120);
+.anotherContainer table {
+  table-layout: fixed; width: 60%;
 }
+
+.anotherContainer td {
+  word-wrap:break-word;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
 
 th {
-    font-weight: 600;
-    text-align: left;
-    padding-top: 5px;
-    padding-bottom: 4px;
-    background-color: rgb(180, 180, 180);
+    background: #F3F3F3; /* Light grey background */
+    font-weight: bold; /* Make sure they're bold */
+    margin: auto;
 }
+
+td {
+    background: #FAFAFA; /* Lighter grey background */
+    text-align: center; /* Center our text */
+    margin: auto;
+}
+
 
 tr.alt td
 {

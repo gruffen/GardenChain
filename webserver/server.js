@@ -14,7 +14,7 @@ var initHttpServer = () => {
   app.use(express.static(path.join(__dirname, '../public'), {
     index: false
   }));
-  
+
   // HOME PAGE
   app.get('/', (req, res) => {
     console.log("Retrieving index.html");
@@ -33,6 +33,21 @@ var initHttpServer = () => {
     res.sendFile(CONFIG.userFilePath + 'GardenChain/public/index.html');
   });
 
+  // GARDEN ONE
+  app.get('/harvestone', (req, res) => {
+    console.log("Retrieving garden_one.html");
+
+    res.sendFile(CONFIG.userFilePath + 'GardenChain/public/garden_one.html');
+  });
+
+  // GARDEN TWO
+  app.get('/harvesttwo', (req, res) => {
+    console.log("Retrieving garden_two.html");
+
+    res.sendFile(CONFIG.userFilePath + 'GardenChain/public/garden_two.html');
+  });
+
+  // Start listening
   app.listen(CONFIG.port, () =>
         console.log(`Webserver listening on port ${CONFIG.port}!`));
 };
